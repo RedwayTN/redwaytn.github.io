@@ -1,3 +1,4 @@
+/* Default body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,11 +7,73 @@ body {
     color: #333;
 }
 
+/* Dark mode styles */
 body.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #3a3a3a; /* Keep dark gray background */
+    color: #ffffff; /* White text for the body */
 }
 
+/* Navbar styling */
+nav {
+    background-color: #777; /* Light mode navbar color */
+    text-align: center; /* Center the navbar */
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark color for links in light mode */
+    margin: 0 2rem; /* Increase the margin between navbar items */
+    font-weight: normal; /* Normal weight for navbar links */
+}
+
+body.dark-mode nav {
+    background-color: #555; /* Lighter gray for dark mode navbar */
+}
+
+body.dark-mode nav a,
+body.dark-mode nav a:visited {
+    color: #ffffff; /* White color for navbar links in dark mode */
+    font-weight: normal; /* Normal text (not bold) */
+    text-decoration: none; /* No underline in navbar links */
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a:active {
+    color: #ffffff; /* Keep white color on hover/active */
+}
+
+/* Links in the body */
+body.dark-mode a,
+body.dark-mode a:visited {
+    color: #ffffff !important; /* White color for the links in the body */
+    font-weight: bold; /* Bold links */
+    text-decoration: underline; /* Underlined links */
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:active {
+    color: #ffffff !important; /* White color on hover/active */
+    text-decoration: underline; /* Keep the underline */
+}
+
+/* Dark mode toggle button styling */
+body.dark-mode #dark-mode-toggle {
+    background-color: #5a5a5a; /* Slightly lighter gray for the toggle button */
+    color: #e0e0e0; /* Light gray text */
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #666; /* Lighter gray on hover */
+}
+
+/* Footer styling in dark mode */
+body.dark-mode footer {
+    background-color: #3a3a3a; /* Same as body for uniformity */
+    color: #cccccc; /* Softer gray for footer text */
+}
+
+/* General styling for the dark mode toggle button */
 #dark-mode-toggle {
     position: fixed;
     top: 10px;
@@ -21,7 +84,9 @@ body.dark-mode {
     color: white;
     border: none;
     border-radius: 5px;
+}
 
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
@@ -29,23 +94,14 @@ header {
     text-align: center;
 }
 
-nav {
-    margin: 1rem;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 1rem;
-}
-
+/* Section styling */
 section {
     padding: 2rem;
     max-width: 800px;
     margin: auto;
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -54,6 +110,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* Highlighted text */
 .highlight {
     color: #0066cc;
     font-weight: bold;
