@@ -115,3 +115,24 @@ footer {
     color: #0066cc;
     font-weight: bold;
 }
+
+.certifications-container {
+    display: flex; /* Aligns the iframes in a row */
+    justify-content: space-between; /* Adds space between the iframes */
+    gap: 10px; /* Adds a small gap between iframes */
+    width: calc(100% + 500px); /* Makes the container wider than the page */
+    margin-left: -250px; /* Centers the wider container */
+    box-sizing: border-box; /* Ensures padding and borders are included in size */
+}
+
+.certifications-container iframe {
+    width: 49%; /* Each iframe still takes nearly half of the container */
+    height: 600px; /* Adjust the height as needed */
+    border: none; /* Removes borders */
+}
+
+section#certification {
+    text-align: center; /* Keeps the section's heading and text centered */
+}
+
+
